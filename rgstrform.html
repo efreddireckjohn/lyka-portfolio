@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+
+      <div class="card shadow">
+        <div class="card-header text-center fw-bold">
+          Registration Form
+        </div>
+
+        <div class="card-body">
+          <form>
+
+            <div class="mb-3">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control" placeholder="Enter first name">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Middle Name</label>
+              <input type="text" class="form-control" placeholder="Enter middle name">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-control" placeholder="Enter last name">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Grade Level</label>
+                <select class="form-select" id="grade" onchange="changeSection()">
+                  <option selected disabled>Choose grade</option>
+                  <option value="11">Grade 11</option>
+                  <option value="12">Grade 12</option>
+                </select>
+              </div>
+              
+              <div class="mb-3">
+                <label class="form-label">Section</label>
+                <select class="form-select" id="section">
+                  <option selected disabled>Choose section</option>
+                </select>
+              </div>
+              
+              <script>
+              function changeSection() {
+                let grade = document.getElementById("grade").value;
+                let section = document.getElementById("section");
+              
+                // clear previous options
+                section.innerHTML = '<option selected disabled>Choose section</option>';
+              
+                if (grade === "11") {
+                  section.innerHTML += "<option>Hawking</option>";
+                  section.innerHTML += "<option>Newton</option>";
+                  section.innerHTML += "<option>curie</option>";
+                } 
+                else if (grade === "12") {
+                  section.innerHTML += "<option>apollo</option>";
+                  section.innerHTML += "<option>zeus</option>";
+                  section.innerHTML += "<option>athena</option>";
+                  
+
+                }
+              }
+              </script>
+              
+
+            <div class="mb-3">
+              <label class="form-label">Username</label>
+              <input type="text" class="form-control" placeholder="Enter username">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Confirm Password</label>
+              <input type="password" class="form-control">
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">
+                Save
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>
