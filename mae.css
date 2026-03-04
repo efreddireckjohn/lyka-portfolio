@@ -1,10 +1,5 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+
 
 .main{
     width: 100%;
@@ -24,6 +19,7 @@
 
 .logo{
     width: 120px;
+    
 }
 
 .navbar ul{
@@ -35,16 +31,6 @@
     margin: 0 15px;
 }
 
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.navbar ul li a:hover{
-    color: rgb(224, 174, 215);
-}
 
 
 .info{
@@ -56,10 +42,7 @@
     font-size: 50px;
 }
 
-.info h3{
-    font-size: 25px;
-    margin: 10px 0;
-}
+
 
 .info span{
     color: rgb(255, 0, 251);
@@ -77,21 +60,13 @@
     transition: 0.3s;
 }
 
-.info a:hover{
-    background: rgb(178, 92, 92);
-}
-
 
 section{
     padding: 60px 10%;
     text-align: center;
 }
 
-section h2{
-    font-size: 35px;
-    margin-bottom: 20px;
-    color: #333;
-}
+
 
 section p{
     font-size: 18px;
@@ -159,11 +134,10 @@ form button:hover{
 .social-links a:hover{
     background: #928dab;
 }
-/* --- Updated CSS for Projects --- */
 
 .projects-section {
     padding: 60px 5%;
-    background-color: #1a1a2e; /* Dark background to match theme */
+    background-color: #1a1a2e; 
     color: white;
 }
 
@@ -176,19 +150,19 @@ form button:hover{
 }
 
 .section-title span {
-    color: #FF00FF; /* Pink accent */
+    color: #e7bfe0; 
 }
 
 .projects-container {
     display: grid;
-    /* This makes it responsive automatically */
+    
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
     padding: 20px;
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.05); /* Very faint white */
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid #333;
     border-radius: 20px;
     padding: 20px;
@@ -198,10 +172,10 @@ form button:hover{
     overflow: hidden;
 }
 
-/* Hover Effect: Lifts card, adds shadow, and turns border pink */
+
 .project-card:hover {
     transform: translateY(-10px);
-    border-color: #FF00FF;
+    border-color: #efccef;
     box-shadow: 0 10px 30px rgba(255, 0, 255, 0.2);
     background: rgba(255, 255, 255, 0.1);
 }
@@ -215,7 +189,7 @@ form button:hover{
     transition: transform 0.4s ease;
 }
 
-/* Zoom effect on image when hovering card */
+
 .project-card:hover .project-img {
     transform: scale(1.05);
 }
@@ -230,7 +204,7 @@ form button:hover{
 
 .project-info h3 {
     font-size: 1.5rem;
-    color: #FFFF00; /* Yellow Title */
+    color: #f9f9f5; 
     margin-bottom: 10px;
 }
 
@@ -245,11 +219,11 @@ form button:hover{
     display: inline-block;
     padding: 12px 25px;
     background: transparent;
-    border: 2px solid #FFFF00;
-    color: #FFFF00;
+    border: 2px solid #26261f;
+    color: #909086;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 50px; /* Rounded button */
+    border-radius: 50px; 
     transition: all 0.3s ease;
     text-transform: uppercase;
     font-size: 0.8rem;
@@ -257,7 +231,7 @@ form button:hover{
 }
 
 .view-btn:hover {
-    background: #FFFF00;
+    background: #9c9c99;
     color: #000;
-    box-shadow: 0 0 15px rgba(255, 255, 0, 0.5);
+    box-shadow: 0 0 15px rgba(246, 246, 243, 0.5);
 }
